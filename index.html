@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Freak</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Vidaloka&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Josefin Sans", sans-serif;
+      font-family: "Vidaloka", serif;
+      margin: 0px;
+      padding: 0px;
+      background: url("img.jpeg");
+      background-position: right;
+      background-size: cover;
+      color: white;
+    }
+    .left {
+      display: inline-block;
+      position: absolute;
+      left: 60px;
+      top: 20px;
+    }
+    .left div {
+      text-align: center;
+      font-size: 20px;
+      line-height: 20px;
+    }
+    .left img {
+      width: 80px;
+      filter: invert(100%);
+      padding: 1px 18px;
+    }
+    .mid {
+      top: 20px;
+      display: block;
+      width: 47%;
+      margin: 20px auto;
+    }
+    .right {
+      display: inline-block;
+      position: absolute;
+      right: 8px;
+      top: 20px;
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 21px;
+    }
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 34px 19px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: rgb(107, 96, 96);
+    }
+
+    .btn {
+      font-family: "Josefin Sans", sans-serif;
+      font-family: "Vidaloka", serif;
+      margin: -3px 9px;
+      color: white;
+      padding: 14px 18px;
+      background-color: black;
+      border: 2px solid grey;
+      border-radius: 10px;
+      font-size: 17px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: rgba(41, 7, 7, 0.842);
+    }
+    .container {
+      border: 2px solid pink;
+      margin: 96px 75px;
+      width: 58%;
+      border-radius: 30px;
+      padding: 75px;
+    }
+    .form-group input {
+      font-family: "Josefin Sans", sans-serif;
+      font-family: "Vidaloka", serif;
+      text-align: center;
+      display: block;
+      width: 70%;
+      padding: 8px;
+      border: 2px solid black;
+      margin: 14px auto;
+      font-size: 21px;
+      border-radius: 9px;
+    }
+    .container h1 {
+      text-align: center;
+    }
+    .container button {
+      display: block;
+      width: 95%;
+      margin: auto;
+    }
+    .container label{
+        display: inline-block;
+    max-width: 125%;
+    margin-bottom: 6px;
+    font-weight: 700;
+    }
+    .col-lg-6{
+        width:max-content;
+        max-width: 400%;
+    }
+   
+  </style>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="img.jpg" alt="" srcset="" />
+        <div>Fitness Freak</div>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join the best Gym of Greater Noida Now!</h1>
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <div id="ui">
+                <form class="form-group">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label>First Name:</label>
+                            <input type="text" name="fname" class="form-control" placeholder="Enter first name">
+                        </div>
+                        <div class="col-lg-6">
+                            <label>Last Name:</label>
+                            <input type="text" name="lname" class="form-control" placeholder="Enter last name">
+                        </div>
+                    </div>
+                    <label>E-mail</label>
+                    <input type="email" name="email" class="form-control" placeholder="Enter your E-mail">
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label>Age:</label>
+                            <input type="text" name="Aname" class="form-control" placeholder="Enter your Age">
+                        </div>
+                        <div class="col-lg-6">
+                            <label>Gender:</label>
+                            <input type="text" name="Gname" class="form-control" placeholder="Enter the Gender">
+                        </div>
+                </form>
+            </div>
+        </div>
+      </div>
+      <button class="btn">Submit</button>
+    </div>
+  </body>
+</html>
